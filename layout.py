@@ -67,16 +67,10 @@ for i in range(6):
     time.sleep(1)
 
 placeholder.write("Data loading complete. Displaying business insights.")
-  
-selected_quarter = st.selectbox("Select a quarter:", ["Q1 2024", "Q2 2024", "Q3 2024", "Q4 2024"])
-growth = st.slider("Adjust growth percentage:", 0, 50, 10)
-
-st.bar_chart({"Revenue (in M$)": [1.2, 1.5, 1.3, 1.6]})
-if st.button("Show Motivation"):
-    st.success("Keep pushing for growth! 🚀")
 
 st.subheader("Interactive Revenue Checker")
 quarters = ["Q1 2024", "Q2 2024", "Q3 2024", "Q4 2024"]
+selected_quarter = st.selectbox("Select a quarter:", ["Q1 2024", "Q2 2024", "Q3 2024", "Q4 2024"])
 
 st.write(f" Revenue for {selected_quarter}: {sales_data[selected_quarter]}")
 
