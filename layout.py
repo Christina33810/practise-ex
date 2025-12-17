@@ -77,7 +77,6 @@ if st.button("Show Motivation"):
 
 st.subheader("Interactive Revenue Checker")
 quarters = ["Q1 2024", "Q2 2024", "Q3 2024", "Q4 2024"]
-selected_quarter = st.selectbox("Select a quarter:", quarters)
 
 st.write(f" Revenue for {selected_quarter}: {sales_data[selected_quarter]}")
 
