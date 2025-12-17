@@ -1,5 +1,7 @@
 import streamlit as st
 import time
+import numpy as np
+import pandas as pd
 
 st.title("Business Performance Dashboard")
 st.write("Objective: Provide insights into revenue, customer feedback, and market trends.")
