@@ -3,7 +3,7 @@ import streamlit as st
 st.title("Business Performance Dashboard")
 st.write("Objective: Provide insights into revenue, customer feedback, and market trends.")
 
-col2, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4 = st.columns(4)
 with col1:
   st.header("Q1 2024")
   st.write("Revenue: $1.2M")
